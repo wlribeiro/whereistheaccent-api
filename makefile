@@ -8,3 +8,6 @@ run:
 
 migration:
 	alembic upgrade head
+
+install:
+	pip install -r requirements.txt
