@@ -6,7 +6,7 @@ from whereistheaccent import config
 
 
 engine = create_engine(
-    config.DATABASE_URL, connect_args={"check_same_thread": False}
+    config.DATABASE_URL
 )
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
